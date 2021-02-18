@@ -1383,7 +1383,6 @@ Slice::Gen::TypesVisitor::visitStructEnd(const StructPtr& p)
     DataMemberList dataMembers = p->dataMembers();
 
     vector<string> params;
-    vector<string>::const_iterator pi;
 
     for(DataMemberList::const_iterator q = dataMembers.begin(); q != dataMembers.end(); ++q)
     {

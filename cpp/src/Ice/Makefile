@@ -159,6 +159,7 @@ SDIR		= $(slicedir)/Ice
 
 include $(top_srcdir)/config/Make.rules
 
+$(info   var is "$(BZIP2_FLAGS)")
 CPPFLAGS	:= -I.. $(CPPFLAGS) -DICE_API_EXPORTS $(BZIP2_FLAGS)
 ifneq ($(COMPSUFFIX),)
 CPPFLAGS	:= $(CPPFLAGS) -DCOMPSUFFIX=\"$(COMPSUFFIX)\"
